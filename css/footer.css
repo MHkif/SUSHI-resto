@@ -1,0 +1,212 @@
+
+
+.bottom{
+  display: flex;
+
+  gap: 24px;
+  height: 180px;
+  width: 70%;
+  margin: 0px 15% 2% 15%;
+  }
+
+  .btmImg{
+    width: 31%;
+height: 150px;
+display: flex;
+align-items: center;
+text-align: center;
+
+}
+  
+footer{
+    height: 420px;
+    background: #2D2D2D;
+    width: 100%;
+    color: #ffffff;
+    display: block;
+}
+
+
+   
+  .info_section{
+    display: flex;
+    gap: 18%;
+    
+  }
+  .row1 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+text-align: center;
+    background-color: #ffffff;
+    width: 208px;
+height: 220px;
+background: #FFFFFF;
+border-radius: 0px 0px 250px 0px;
+  }
+  
+.row1 .Sushi_img{
+    width: 140px;
+  }
+  .row1 .Fresh_img{
+    width: 100px;
+  }
+
+
+ 
+  .infos {
+    width: 65%;
+    height: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 5% 16% 0px 0px;
+
+  }
+
+  .ftlogo{
+    display: flex;
+    flex-direction: column;
+  width: 208px;
+  height: 220px;
+  background: #FFFFFF;
+  border-radius: 0px 0px 250px 0px;
+  padding-left: 1%;
+  }
+  
+  .ftlogo .logo{
+      width: 120px;
+      height: 120px;
+      }
+   
+      .ftlogo .logo_name{
+        width: 120px;
+        }
+  
+  .infos a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    color: #FFFFFF;
+  }
+
+  .footer_icons{
+    width: 14px;
+  }
+
+  .address{
+ display: flex;   
+}
+
+.newslettre{
+  display: flex;
+  padding-left: 30%;
+  align-items: flex-end;
+}
+
+.info_form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.info_heading{
+  display: flex;
+align-items: center;
+justify-content: center;
+text-transform: uppercase;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+margin: 20px 0;
+position: relative;
+}
+
+
+
+.info_heading::before {
+   content: "";
+  width: 45px;
+  height: 5px;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5px;
+background: linear-gradient(180deg, #FF2828 0%, #E64D38 100%);
+
+}
+.email_box{
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+#input{
+  width: 500px;
+ justify-content: left;
+ 
+}
+
+
+#btn_sub{
+width: 125px;
+height: 34px;
+background: linear-gradient(180deg, #FF2828 0%, #E64D38 99.99%, #E64D38 100%);
+border-radius: 20px;
+border-style: none;
+color: #FFFFFF;
+}
+
+form label{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+
+color: #5A5959;
+}
+
+.social_box{
+  display: flex;
+  gap: 20px;
+width: 204px;
+height: 32px;
+
+
+}
+
+.rights{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 3%;
+height: 60px;
+background: #2D2D2D;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #9C9B9B;
+gap: 20px;
+}
+
+.line{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: outset;
+  border-width: 1px;
+}
