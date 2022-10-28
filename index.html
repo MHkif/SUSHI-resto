@@ -13,6 +13,8 @@
     <!-- Custom styles for this template -->
     <link href="css/home.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
+    <link href="responsive/homeRes.css" rel="stylesheet" />
+    <link href="responsive/footerRes.css" rel="stylesheet" />
     <link rel="shortcut icon" href="statics/img/favicon.ico" />
 <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +24,7 @@
 
 </head>
   <body>
-    <section class="MAIN">
+    <section class="main">
       <div class="seg1">
         <header class="header_class">
           <a href="">
@@ -30,16 +32,19 @@
           </a>
           <div class="right_side">
             <!-- Start Nav bar  -->
-            <nav class="nav">
-              <a href="index.html">Accueil</a>
-              <a href="about.html">A Propos</a>
-              <a href="contact.html">Contact</a>
-            </nav>
-            <!-- End Nav bar  -->
-            <a href="cart.html" , class="carte">
-              <img src="images/Shopbag.png" alt="carte" />
-            </a>
+              <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">A Propos</a>
+                <a href="contact.html">Contact</a>
+              </nav>
+              <!-- End Nav bar  -->
+              <a href="carte.html" , class="carte">
+                <img src="images/Shopbag.png" alt="carte" />
+              </a>
           </div>
+       <a class="menu" href="">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+        </a>
         </header>
       </div>
       <!--  Chef Section -->
@@ -95,7 +100,7 @@
       <!-- End Chef Section -->
 
       <!-- cover Section -->
-      <div id="container">
+      <!-- <div id="container">
         <img
           id="cover"
           src="images/cover.jpg"
@@ -118,12 +123,45 @@
             />
           </div>
         </div>
+      </div> -->
+
+      <!-- <div class="notre_carte">
+        
+      </div> -->
+
+      <div class="collection">
+        <div class="collec">
+          <span>Notre</span>
+          <span>Carte</span>
+        </div>
+        <img
+          class="image_collection"
+          src="images/plat3.jpg"
+          alt="if  there is no image [GhayarHa]"
+        />
+        <img
+          class="image_collection"
+          src="images/plat2.jpg"
+          alt="if  there is no image [GhayarHa]"
+        />
       </div>
 
       <div class="bottom">
-        <img class="btmImg" src="images/sécurisé.png" alt="if  there is no image [GhayarHa]">
+        <!-- <img class="btmImg" src="images/sécurisé.png" alt="if  there is no image [GhayarHa]">
         <img class="btmImg" src="images/delivery.png" alt="if  there is no image [GhayarHa]">
-        <img class="btmImg" src="images/commande.png" alt="if  there is no image [GhayarHa]">
+        <img class="btmImg" src="images/commande.png" alt="if  there is no image [GhayarHa]"> -->
+        <div class="IconCard">
+          <i class="fa-solid fa-truck-fast"></i>
+          <span>Paiment En Ligne 100% Sécurisé</span>
+        </div>
+        <div class="IconCard">
+          <i class="fa-solid fa-truck-fast"></i>
+          <span>Livraison En 45-60 MIN</span>
+        </div>
+        <div class="IconCard">
+          <i class="fa-solid fa-truck-fast" ></i>
+          <span>Préparation À La Commande</span>
+        </div>
       </div>
     </section>
     
@@ -131,7 +169,7 @@
 
   <footer>
     <!-- info section -->
-    <section class="info_section">
+    <div class="left_S">
       <div class="ftlogo">
         <a href="">
           <img class="logo" src="images/sushi_image.png" alt="" />
@@ -140,73 +178,58 @@
           <img class="logo_name" src="images/Fresh Sushi.png" alt="" />
         </a>
       </div>
+      
+    </div>
 
+    <section class="info_section">
       <div class="infos">
         <div class="address">
           <a href="">
-            <img class="footer_icons" src="images/location.png" alt="" />
+            <!-- <img class="footer_icons" src="images/location.png" alt="" /> -->
             <span class="text"> Address </span>
           </a>
         </div>
         <div class="info_contact">
           <a href="">
-            <img class="footer_icons" src="images/phone.png" alt="" />
+            <!-- <img class="footer_icons" src="images/phone.png" alt="" /> -->
             <span class="text"> +01 1234567890 </span>
           </a>
         </div>
 
         <div class="email">
           <a href="">
-            <img class="footer_icons" src="images/mail.png" alt="" />
+            <!-- <img class="footer_icons" src="images/mail.png" alt="" /> -->
             <span class="text"> demo@gmail.com </span>
           </a>
         </div>
       </div>
-     
+      <div class="info_social">
+       <div>
+        <h5 class="info_heading">Follow Us</h5>
+       </div>
+       <div class="social_box">
+        <a href="">
+          <img src="images/fb.png" alt="" />
+        </a>
+        <a href="">
+          <img src="images/twitter.png" alt="" />
+        </a>
+        <a href="">
+          <img src="images/linkedin.png" alt="" />
+        </a>
+        <a href="">
+          <img src="images/insta.png" alt="" />
+        </a>
+    </div>
 
     </div>
     </section>
-
-     <!-- NewsLetter section -->
-    <section class="newslettre">
-      <div class="info_form">
-          <h5 class="info_heading">Newsletter</h5>
-        <form  action="">
-          <label for="enter_email">Enter Your Email</label>
-          <div class="email_box">
-            <input type="text" id="input" />
-              <button id="btn_sub">subscribe</button>
-          </div>
-        </form>
-  
-      </div>
       
-      <div class="info_social">
-          <h5 class="info_heading">Follow Us</h5>
-        
-        <div class="social_box">
-          <a href="">
-            <img src="images/fb.png" alt="" />
-          </a>
-          <a href="">
-            <img src="images/twitter.png" alt="" />
-          </a>
-          <a href="">
-            <img src="images/linkedin.png" alt="" />
-          </a>
-          <a href="">
-            <img src="images/insta.png" alt="" />
-          </a>
-      </div>
+      
      
     </section>
 
-     <!-- Rights section -->
- 
-    <section class="rights">
-      <hr width="25%" color="#FFFFFF">
-      <p>&copy;  2022 All Rights Reserved</p>
-    </section>
+   
     
     
   </footer>
