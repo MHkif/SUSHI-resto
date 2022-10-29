@@ -1,0 +1,128 @@
+@media (max-width: 700px) {
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .seg1 {
+    height: 180px;
+  }
+
+  .header_class {
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_class img {
+    height: 50px;
+  }
+
+  .menu {
+    color: #ffffff;
+    display: flex;
+    text-decoration: none;
+  }
+  nav,
+  .right_side {
+    display: none;
+  }
+
+  
+
+  .promo {
+    /* position: fixed; */
+    width: 300px;
+    height: 75px;
+    top: 200px;
+    background: rgba(45, 45, 45, 0.95);
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    left: 40px;
+  }
+
+  .promo p {
+    width: auto;
+    height: 70px;
+    left: 10px;
+    top: 0px;
+    /* margin: 0% auto; */
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    text-justify: auto;
+  }
+  .products {
+    margin-top: 120px;
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .prod {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 170px;
+    background: #ffffff;
+    text-align: center;
+  }
+
+  .prod img {
+    width: 50%;
+  }
+
+  .detailsPlat {
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4%;
+  }
+
+  .platsName {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 10px;
+  }
+
+  
+.total {
+    width: auto;
+    height: auto;
+    gap: 20px;
+    margin: 20% 10%;
+  }
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  #tol {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 35px;
+    color: #000000;
+  }
+  
+  .top_seg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .valider {
+    width: 280px;
+    height: 60px;
+    color: #ffffff;
+    border: none;
+    background: #ff2828;
+    border-radius: 30px;
+  }
+}

@@ -99,7 +99,7 @@
 
 /* Small Screens */
 
-@media (min-width: 820px) and (max-width: 1204px) {
+@media (min-width: 820px) and (max-width: 902px) {
   .menu {
     display: none;
   }
@@ -143,8 +143,10 @@
 /* Medium */
 
 @media (min-width: 901px) and (max-width: 1200px) {
+
   .bottom {
     display: flex;
+
     width: auto;
     height: auto;
     gap: 100px;

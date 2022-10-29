@@ -21,6 +21,16 @@
   background: rgba(0, 0, 0, 0.44);
   padding: 0px 20px;
 }
+/* .nav{
+position: absolute;
+width: 250px;
+height: 110vh;
+padding: 20% 40px;
+display: flex;
+background: #f2f2ed;
+align-items: center;
+flex-direction: column;
+} */
 
 nav,
 .right_side {
