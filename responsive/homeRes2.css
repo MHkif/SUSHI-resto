@@ -1,0 +1,36 @@
+@media all and (min-width: 468px) {
+    .menu {
+      justify-content: center;
+    }
+  
+    .logo {
+      flex: 1;
+    }
+  
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+    .toggle {
+      order: 2;
+    }
+    .button a,
+    #button {
+      padding: 7.5px 15px;
+      background: teal;
+      border: 1px #006d6d solid;
+      border-radius: 50em;
+    }
+    .button a:hover,
+    #button {
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+    .button a:hover,
+    #button {
+      background: #006d6d;
+      border-color: #005959;
+    }
+  }
+  
