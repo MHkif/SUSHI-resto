@@ -7,8 +7,8 @@
 .seg1 {
   background-image: url("/images/sushies.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+   background-repeat: no-repeat;
+  background-position: center; 
   width: 100%;
   height: 650px;
 }
@@ -16,114 +16,60 @@
 body {
   font-family: Poppins;
 }
-/* .header_class {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 90px;
-  background: rgba(0, 0, 0, 0.44);
-  padding: 0px 20px;
-} */
+
+.description {
+  position: relative;
+  justify-self: center;
+  top: 30%;
+  left: 60px;
+  color: #fff;
+  width: calc(100% - 60px);
+}
+
+.description h2 {
+  font-size: 48px;
+}
+.description p {
+ color: #f6f6f6;
+}
 
 nav {
-  background: rgba(0, 0, 0, 0.44);
-  padding: 5px 20px;
-}
-ul {
-  list-style-type: none;
-}
-a {
-  color: white;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-.logo a:hover {
-  text-decoration: none;
-}
-.menu li {
-  font-size: 16px;
-  padding: 15px 5px;
-  white-space: nowrap;
-}
-.logo a,
-.toggle a {
-  font-size: 20px;
-}
-
-/* Mobile menu */
-.menu {
   display: flex;
-  flex-wrap: wrap;
+  padding: 1.5% 2%;
   justify-content: space-between;
   align-items: center;
+  background: rgba(0, 0, 0, 0.44);
 }
-.toggle {
-  order: 1;
+nav img {
+  width: 90px;
 }
-.item.button {
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 30px;
+  position: relative;
+}
+.nav-links ul li a {
   color: rgb(255, 255, 255);
-  order: 2;
-}
-.button a:hover {
   text-decoration: none;
-  transition: all 0.25s;
+  font-size: 13px;
+  font-weight: 600;
 }
-.button a:hover {
-  background: #006d6d;
-  border-color: #005959;
-}
-
-.item:not(.button, #button) {
-  width: 100%;
-  text-align: center;
-  order: 3;
+nav .fa {
   display: none;
 }
-
-.item.active {
-  display: block;
-}
-
-/* Navbar Toggle */
-.toggle {
-  cursor: pointer;
-}
-
-/* 
-.menu {
-  color: #ffffff;
-  display: none;
-}
-
-nav a {
-  text-decoration: none;
-  padding: 15px 25px;
-  text-align: center;
-  color: #ffffff;
-  margin: 0px;
-  font-family: sans-serif;
-}
-nav a:hover {
-  background-color: #777777;
-  color: #ffffff;
-  border-radius: 40px;
-}
-
-.carte {
-  padding: 15px 5px 15px 40px;
-  margin: 0px;
-} */
 
 .chefs {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding: 60px 0;
+  padding: 100px 0;
   gap: 40px;
-  margin-top: 6%;
 }
 
 .items {
@@ -135,17 +81,16 @@ nav a:hover {
   justify-content: center;
   width: 100%;
   height: auto;
-  left: 2px;
-  top: 200px;
+  /* left: 2px;
+  top: 200px; */
 }
 
 .plat1 {
   width: 240px;
-  height: 300px;
+  height: 320px;
   background: #ffffff;
-  box-shadow: 0px 4px 4px 1px rgba(200, 200, 200, 0.22);
-  border-radius: 10px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .title {
@@ -156,13 +101,17 @@ nav a:hover {
   color: #696363;
 }
 
-img {
-  width: 100%;
+.imagePlat {
+  width: 240px;
+  height: 70%;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 1px rgba(117, 116, 116, 0.22);
+  border-radius: 10px;
+  text-align: center;
 }
 
 .detailsPlat {
-  /* width: 100%; */
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .platsName {
@@ -170,9 +119,8 @@ img {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 22px;
   color: #000000;
-  /* margin-top: 100%; */
   justify-content: center;
 }
 .subtitle {
@@ -180,29 +128,10 @@ img {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   color: #696363;
   justify-content: center;
-
-  padding-top: 10px;
 }
-
-/* #container {
-  display: block;
-  margin-bottom: 15%;
-} */
-
-/* .notre_carte {
-  display: flex;
-  flex-wrap: wrap;
-  width: auto;
-  background: #ffffff;
-  height: 380px;
-  margin-left: 10%;
-  background: #030041;
-  justify-content: center;
-  align-items: center;
-} */
 
 .collection {
   display: flex;
@@ -210,35 +139,51 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  width: 90%;
+  gap: 80px;
   height: auto;
-  background: #ffffff;
-  margin: 0% auto;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  padding: 20px 20px;
+  margin: 0px 0 100px;
 }
 
-.collec {
+.crlCard {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  height: 280px;
-  background: #2d0505;
-  color: #fff;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 50px;
-  align-items: center;
-  text-align: center;
+  font-size: 18px;
+  width: auto;
+  padding: 20px;
 }
 
-.image_collection {
-  width: 30%;
-  height: 280px;
+.crlCard h2 {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.crlCard p {
+  font-size: 10px;
+  text-align: center;
+  color: #696363;
+}
+
+.circle {
+  border-radius: 100%;
+  background-color: #ffffff;
+  padding: 60px 70px;
+  font-size: 45px;
+  border: 1px solid rgba(120, 120, 120, 0.632);
+  box-shadow: 0px 0px 25px 0px rgba(120, 120, 120, 0.932);
+}
+
+.circle.ONE {
+  color: #b47264;
+}
+
+.circle.TWO {
+  color: chocolate;
+}
+
+.circle.THREE {
+  color: crimson;
 }
 
 .bottom {

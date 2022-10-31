@@ -23,26 +23,23 @@
     />
     <title>carte</title>
   </head>
+
   <body>
    
     <div class="seg1">
-      <header class="header_class">
-        <a href="">
-          <img src="images/Logoo.png" alt="Fresh Sushi" />
-        </a>
-        <div class="right_side">
-          <!-- Start Nav bar  -->
-            <nav class="nav">
-              <a href="index.html">Accueil</a>
-              <a href="about.html">A Propos</a>
-              <a href="contact.html">Contact</a>
-            </nav>
-            <!-- End Nav bar  -->
+      <nav>
+        <a href=""><img src="images/logoo.png" alt=""></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hide()"></i>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">A Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <a class="menu" href="">
-          <i class="fa-sharp fa-solid fa-bars"></i>
-          </a>
-      </header>
+
+        <i class="fa fa-bars" onclick="show()"></i>
+    </nav>
       <div class="promo">
         <p id="txt_Promo">
           Promo : 1 Coca-Cola ou 1 paire de Boules Coco offert dès 25€ ou 1
@@ -52,117 +49,113 @@
       </div>
     </div>
 
-    <div class="products">
-      <div class="prod">
-        <img
-          class="imagePlat"
-          src="images/CESAR Roll.jpg"
-          alt="if there is no image [Ghayarha]"
-        />
-        <div class="detailsPlat">
-          <span class="platsName">CESAR ROLL</span>
-          <div>
-            <span class="subtitle">8 pièces</span>
-            <span class="subtitle">Poulet pané, avocat, oignon frit</span>
-            <span class="subtitle">sauce tériyaki, sauce mayo</span>
-          </div>
+    <div class="select">
+      <select name="" id="select1" onclick="test()">
+          <option value="" >Toutes les categories</option>
+          <option value="">Salades</option>
+          <option value="">Roll</option>
+          <option value="">Plats</option>
+          <option value="">Juices</option>
+        </select>
+  </div>
 
-          <div class="price_section">
-            <span class="price">10.50 €</span>
-            <div class="priceIcons">
-              <i class="fa-solid fa-circle-plus" style="color: #ff2828"></i>
-              <span class="price"> 1 </span>
-              <i class="fa-solid fa-circle-minus" style="color: #ff2828"></i>
-            </div>
-          </div>
+            <div class="gridProd">
+
+
+                    <div class="Pro-container">
+                      <div class="pro roll">
+                        <img src="images/dragon roll.jpg" alt="">
+                        
+                        <div class="des">
+                          <h3 class="platsName">Dragon Roll</h5>
+                          <span class="subtitle">Sushi Rolls</span>
+                          <div class="price_section">
+                            <span class="price">50 MAD</span>
+                            <a href="#test"  onclick="add('images/dragon roll.jpg','Dragon Roll',50)"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                          </div>
+                        </div>
+                      
+                
+                      <div></div>
+                      </div>
+                      <div class="pro salade">
+                        <img src="images/salade.jpg" alt="">
+                        <div class="des">
+                          <h3 class="platsName">Salade Vegetable</h5>
+                          <span class="subtitle">Healthy Salads</span>
+                          <div class="price_section">
+                            <span class="price">75 MAD</span>
+                            <a href="#test"  onclick="add('images/salade.jpg','Salade Vegetable',75)"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                          </div>
+                        </div>
+                      <div></div>
+                      </div>
+                      <div class="pro plat">
+                        <img src="images/plat1.jpg" alt="">
+                        <div class="des">
+                          <h3 class="platsName">Single Sushi</h5>
+                          <span class="subtitle">Plat Sushi</span>
+                          <div class="price_section">
+                            <span class="price">175 MAD</span>
+                            <a href="#test"  onclick="add('images/plat1.jpg','Single Sushi',175)"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                          </div>
+                        </div>
+
+                      <div></div>
+                      </div>
+                      <div class="pro plat">
+                        <img src="images/plat2.jpg" alt="">
+                        <div class="des">
+                          <h3 class="platsName">Double Sushi</h5>
+                          <span class="subtitle">Plat Sushi</span>
+                          <div class="price_section">
+                            <span class="price">245 MAD</span>
+                            <a href="#test" onclick="add('images/plat2.jpg','Double Sushi',245, 1)"><i class="fa-sharp fa-solid fa-bag-shopping" id="add" ></i></a>
+                          </div>
+                        </div>
+                        
+                      <div></div>
+                      </div>
+                      <div class="pro juice">
+                        <img src="images/juices.jpg" alt="">
+                        <div class="des">
+                          <h3 class="platsName">Juice Panaché</h5>
+                          <span class="subtitle">juices</span>
+                          <div class="price_section">
+                            <span class="price">45 MAD</span>
+                            <a href="#test" onclick="add('images/juices.jpg','Juice Panaché',45 , 1)"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                          </div>
+                        </div>
+                        
+                      <div></div>
+                      </div>
+                        
+                    </div>
+                    <div class="carteSide">
+                      <h3 class="carteTitle">My Cart</h3>
+                    <div class="carteProds" id="test">
+                    
+                    </div>
+                    <div class="total">
+                      <div class="top_seg">
+                        <span id="tol">Total  : </span>
+                        <div>
+                          <span class="price"  id="prixT" style="color: red;">0.00 </span>
+                          <span class="price" >MAD</span>
+                        </div>
+                      </div>
+                      <div class="btns">
+                        <button class="valider">Continuer Mes Achats</button>
+                        <button class="valider" style="background: #00A911;">Confimer</button>
+                      </div>
+                    </div>
+                    </div>
+                       
+                          
         </div>
-      </div>
-      <div class="prod">
-        <img
-          class="imagePlat"
-          src="images/dragon roll.jpg"
-          alt="if there is no image [Ghayarha]"
-        />
-        <div class="detailsPlat">
-          <span class="platsName">Dragon Roll</span>
-          <div>
-            <span class="subtitle">8 pièces</span>
-            <span class="subtitle">Crevette tempuras , asperge,</span>
-            <span class="subtitle">avocat, sauce spicy, sauce tériyak</span>
-          </div>
+    
 
-          <div class="price_section">
-            <span class="price">10.50 €</span>
-            <div class="priceIcons">
-              <i class="fa-solid fa-circle-plus" style="color: #ff2828"></i>
-              <span class="price"> 1 </span>
-              <i class="fa-solid fa-circle-minus" style="color: #ff2828"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="prod">
-        <img
-          class="imagePlat"
-          src="images/Flammé Roll.jpg"
-          alt="if there is no image [Ghayarha]"
-        />
-        <div class="detailsPlat">
-          <span class="platsName">Flammé Roll</span>
-          <div>
-            <span class="subtitle">8 pièces</span>
-            <span class="subtitle">Saumon, avocat,saumon fumé,</span>
-            <span class="subtitle"
-              >sauce tériyaki, katsuobushi (bonite séchée)</span
-            >
-          </div>
-
-          <div class="price_section">
-            <span class="price">10.50 €</span>
-            <div class="priceIcons">
-              <i class="fa-solid fa-circle-plus" style="color: #ff2828"></i>
-              <span class="price"> 1 </span>
-              <i class="fa-solid fa-circle-minus" style="color: #ff2828"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="prod">
-        <img class="imagePlat" src="images/pink.jpg" alt="PINK CRISPY ROLL" />
-        <div class="detailsPlat">
-          <span class="platsName">PINK CRISPY ROLL</span>
-          <div>
-            <span class="subtitle">8 pièces</span>
-            <span class="subtitle">Poulet pané, concombre ,</span>
-            <span class="subtitle"
-              >mangue, sauce spicy, chips aux légumeki</span
-            >
-          </div>
-
-          <div class="price_section">
-            <span class="price">10.50 €</span>
-            <div class="priceIcons">
-              <i class="fa-solid fa-circle-plus" style="color: #ff2828"></i>
-              <span class="price"> 1 </span>
-              <i class="fa-solid fa-circle-minus" style="color: #ff2828"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="total">
-      <div class="top_seg">
-        <span id="tol">Total  :</span>
-        <div><span class="price" style="color: red;">10.50 </span>
-          <span class="price">€</span></div>
-      </div>
-      <div class="btns">
-        <button class="valider">Continuer Mes Achats</button>
-        <button class="valider" style="background: #00A911;">Confimer</button>
-      
-      </div>
-    </div>
+  
   </body>
   <footer>
     <!-- info section -->
@@ -231,3 +224,4 @@
     
   </footer>
 </html>
+<script src="./js/home.js"></script>

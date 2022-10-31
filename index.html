@@ -6,23 +6,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-    crossorigin="anonymous"></script>
   
-    <script>
-    $(function() {
-    $(".toggle").on("click", function() {
-        if ($(".item").hasClass("active")) {
-            $(".item").removeClass("active");
-        } else {
-            $(".item").addClass("active");
-        }
-    });
-});
-    </script>
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,207 +27,155 @@
   <body>
     <section class="main">
       <div class="seg1">
-        <nav class="menu">
-          <li class="logo"> <a href="">
-          <img src="images/Logoo.png" alt="Fresh Sushi" />
-        </a></li>
-      <li class="item"><a href="#">Home</a></li>
-      <li class="item"><a href="#">Menu</a></li>
-      <li class="item"><a href="#">About</a></li>
-      <li class="item"><a href="#">Contact</a></li>
-      </li>
-      <li class="toggle"><i class="fa-solid fa-bars"></i></li>
-      <li class="item button">
-          <a href="carte.html" class="carte">
-              <i class="fa-sharp fa-solid fa-bag-shopping"></i>
-          </a>
-      </li>
-        </nav>
-     <!-- <header class="header_class">
-   
-          
-        </header>  -->
+        <nav>
+          <a href=""><img src="images/logoo.png" alt=""></a>
+          <div class="nav-links" id="nav-links">
+              <i class="fa fa-times" onclick="hide()"></i>
+              <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="carte.html">Menu</a></li>
+                  <li><a href="apropos.html">A Propos</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+
+          <i class="fa fa-bars" onclick="show()"></i>
+      </nav>
     
-             
+            <div class="description">
+              <h2>Best Sushi Experience</h2>
+              <h2>The Best in The City</h2>
+              <p>When you are too lazy to cook,</p>
+              <p> we are just a click away!</p>
+            </div>
 
       </div>
       <!--  Chef Section -->
       <div class="chefs">
-        <span class="title">LE CHEF PRÉSENTE</span>
+        <span class="title">Our Best Categories</span>
         <div class="items">
+
           <div class="plat1">
+           <a href="/cart.html">
             <img
-              class="imagePlat"
-              src="images/CESAR Roll.jpg"
-              alt="Cesar roll"
-            />
+            class="imagePlat"
+            src="images/salade.jpg"
+            alt="Salade"
+          />
+           </a>
             <div class="detailsPlat">
-              <span class="platsName">CESAR ROLL</span>
-              <span class="subtitle">8 pièces</span>
+              <span class="platsName">Salade</span>
+              <span class="subtitle">Order now</span>
+            </div>
+
+          </div>
+
+          <div class="plat1">
+        <a href="/cart.html">
+          <img
+        class="imagePlat"
+        src="images/plats.jpg"
+        alt="les Plats de sushi"
+      />
+        </a>
+        
+            <div class="detailsPlat">
+              <span class="platsName">Plats de Sushi</span>
+              <span class="subtitle">Order now</span>
             </div>
           </div>
           <div class="plat1">
+           <a href="/carte.html">
             <img
-              class="imagePlat"
-              src="images/Flammé Roll.jpg"
-              alt="Flammé Roll"
-            />
+            class="imagePlat"
+            src="images/dragon roll.jpg"
+            alt="Rolls"
+          />
+           </a>
             <div class="detailsPlat">
-              <span class="platsName">Flammé Roll</span>
-              <span class="subtitle">8 pièces</span>
+              <span class="platsName">Sushi Rolls</span>
+              <span class="subtitle">Order now</span>
             </div>
           </div>
           <div class="plat1">
-            <img
-              class="imagePlat"
-              src="images/dragon roll.jpg"
-              alt="Dragon Roll"
-            />
+         <a href="/carte.html">
+             <img
+            class="imagePlat"
+            src="images/juices.jpg"
+            alt="juices"
+          />
+         </a>
             <div class="detailsPlat">
-              <span class="platsName">Dragon Roll</span>
-              <span class="subtitle">8 pièces</span>
+              <span class="platsName">Juices</span>
+              <span class="subtitle">Order now</span>
             </div>
           </div>
-          <div class="plat1">
-            <img
-              class="imagePlat"
-              src="images/Volcano.jpg"
-              alt="Volcano Roll"
-            />
-            <div class="detailsPlat">
-              <span class="platsName">Volcano Roll</span>
-              <span class="subtitle">8 pièces</span>
-            </div>
-          </div>
+         
         </div>
       </div>
-      <!-- End Chef Section -->
 
-      <!-- cover Section -->
-      <!-- <div id="container">
-        <img
-          id="cover"
-          src="images/cover.jpg"
-          alt="if  there is no image [GhayarHa]"
-        />
-        <div class="notre_carte">
-          <div class="collection">
-            <div class="collec">
-              <span>Notre Carte</span>
-            </div>
-            <img
-              class="image_collection"
-              src="images/plat3.jpg"
-              alt="if  there is no image [GhayarHa]"
-            />
-            <img
-              class="image_collection"
-              src="images/plat2.jpg"
-              alt="if  there is no image [GhayarHa]"
-            />
-          </div>
-        </div>
-        
-      </div> -->
-
-      <!-- <div class="notre_carte">
-        
-      </div> -->
 
       <div class="collection">
-        <div class="collec">
-          <span>Notre</span>
-          <span>Carte</span>
+       <div class="crlCard">
+        <div class="circle ONE">
+          <i class="fa-solid fa-boxes-packing"></i>
         </div>
-        <img
-          class="image_collection"
-          src="images/plat3.jpg"
-          alt="if  there is no image [GhayarHa]"
-        />
-        <img
-          class="image_collection"
-          src="images/plat2.jpg"
-          alt="if  there is no image [GhayarHa]"
-        />
+        <h2> Automated Packaging</h2>
+        <p>100% envirement freindly packaging</p>
+       </div>
+        <div class="crlCard">
+           <div class="circle TWO" >
+            <i class="fa-solid fa-box-archive"></i>
+        </div>
+        <h2>Packed with Love</h2>
+        <p>We deliver the best experiences</p>
+        </div>
+        <div class="crlCard">
+          
+        <div class="circle THREE">
+          <i class="fa-solid fa-bowl-food"></i>
+        </div>
+        <h2>Serve hot Appetite</h2>
+        <p>Promise to deliver within 30 min</p>
+        </div>
+
       </div>
 
-      <div class="bottom">
-        <!-- <img class="btmImg" src="images/sécurisé.png" alt="if  there is no image [GhayarHa]">
-        <img class="btmImg" src="images/delivery.png" alt="if  there is no image [GhayarHa]">
-        <img class="btmImg" src="images/commande.png" alt="if  there is no image [GhayarHa]"> -->
-        <div class="IconCard">
-          <i class="fa-solid fa-truck-fast"></i>
-          <span>Paiment En Ligne 100% Sécurisé</span>
-        </div>
-        <div class="IconCard">
-          <i class="fa-solid fa-truck-fast"></i>
-          <span>Livraison En 45-60 MIN</span>
-        </div>
-        <div class="IconCard">
-          <i class="fa-solid fa-truck-fast" ></i>
-          <span>Préparation À La Commande</span>
-        </div>
-      </div>
     </section>
     
   </body>
 
   <footer>
     <!-- info section -->
-    <div class="left_S">
-      <div class="ftlogo">
-        <a href="">
-          <img class="logo" src="images/sushi_image.png" alt="" />
-        </a>
-        <a href="">
-          <img class="logo_name" src="images/Fresh Sushi.png" alt="" />
-        </a>
-      </div>
-      
+    <div class="ftlogo">
+      <a href="">
+        <img class="logo" src="images/logoo.png" alt="" />
+      </a>
     </div>
 
     <section class="info_section">
       <div class="infos">
-        <div class="address">
+        <div class="conatct_box">
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
           <a href="">
-            <!-- <img class="footer_icons" src="images/location.png" alt="" /> -->
+            
             <span class="text"> Address </span>
           </a>
         </div>
-        <div class="info_contact">
+        <div class="conatct_box">
+          <i class="fa-solid fa-mobile-screen-button"></i>
           <a href="">
-            <!-- <img class="footer_icons" src="images/phone.png" alt="" /> -->
             <span class="text"> +01 1234567890 </span>
           </a>
         </div>
-
-        <div class="email">
+        <div class="conatct_box">
+          <i class="fa-solid fa-envelope"></i>
           <a href="">
-            <!-- <img class="footer_icons" src="images/mail.png" alt="" /> -->
             <span class="text"> demo@gmail.com </span>
           </a>
         </div>
       </div>
-      <div class="info_social">
-       <div>
-        <h5 class="info_heading">Follow Us</h5>
-       </div>
-       <div class="social_box">
-        <a href="">
-          <img src="images/fb.png" alt="" />
-        </a>
-        <a href="">
-          <img src="images/twitter.png" alt="" />
-        </a>
-        <a href="">
-          <img src="images/linkedin.png" alt="" />
-        </a>
-        <a href="">
-          <img src="images/insta.png" alt="" />
-        </a>
-    </div>
-
-    </div>
+    
     </section>
       
       

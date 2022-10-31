@@ -1,28 +1,11 @@
-.bottom {
-  display: flex;
-
-  gap: 24px;
-  height: 180px;
-  width: 70%;
-  margin: 0px 15% 2% 15%;
-}
-
-.btmImg {
-  width: 31%;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
 footer {
   /* margin-top: 2000px; */
   display: flex;
-  /* flex-wrap: wrap; */
-  height: 350px;
-  background: #2d2d2d;
+  flex-wrap: wrap;
+  height: 150px;
+  background: #ffffff;
   width: 100%;
-  color: #ffffff;
+  color: #2d2d2d;
   /* gap: 20%; */
 }
 
@@ -32,6 +15,7 @@ footer {
   gap: 18%;
   width: 100%;
   padding: 5% 0px;
+  background: #e64d38;
 }
 /* .row1 {
     display: block;
@@ -58,26 +42,18 @@ border-radius: 0px 0px 250px 0px;
   display: flex;
   align-content: center;
   justify-content: center;
+  color: #2d2d2d;
   gap: 15%;
 }
 
 .ftlogo {
   display: flex;
   flex-direction: column;
-  width: 208px;
-  height: 220px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 0px 0px 250px 0px;
-  padding-left: 8%;
-}
-
-.ftlogo .logo {
-  width: 120px;
-  height: 120px;
-}
-
-.ftlogo .logo_name {
-  width: 120px;
+  padding: 8%;
+  height: 100%;
+  width: 100%;
 }
 
 .infos a {
@@ -87,18 +63,19 @@ border-radius: 0px 0px 250px 0px;
   font-weight: 400;
   font-size: 16px;
   align-items: center;
-  color: #ffffff;
+  color: #2d2d2d;
 }
-
 .footer_icons {
   width: 14px;
+  color: #2d2d2d;
 }
 
+/*
 .conatct_box {
   display: flex;
   gap: 15px;
-  /* justify-content: center; */
-  align-items: center;
+   justify-content: center; 
+   align-items: center; 
 }
 
 /* .newslettre{

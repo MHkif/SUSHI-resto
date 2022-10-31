@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: Poppins;
 }
 
 .seg1 {
@@ -75,6 +76,164 @@ nav a:hover {
   margin: 0px;
 }
 
+.carteSide {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+  width: 100%;
+  border: 1px solid #cce7d0;
+  border-radius: 20px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  padding: 15px;
+}
+
+.carteTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #2d2d2d;
+  justify-content: center;
+}
+
+.prod {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 110px;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+  margin: 10px 0%;
+}
+
+.prod img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.detailsPlat {
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 4%;
+}
+
+.detailsPlat .platsName {
+  display: block;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000000;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  padding: 1.5% 2%;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.44);
+}
+nav img {
+  width: 90px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 30px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+nav .fa {
+  display: none;
+}
+
+.detailsPlat .price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #393939;
+}
+.detailsPlat a {
+  text-decoration: none;
+}
+
+.detailsPlat .price_section {
+  padding-right: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.gridProd {
+  padding: 0px 20px;
+  margin-top: 14%;
+  width: 100vw;
+  display: flex;
+  gap: 10px;
+}
+
+.Pro-container {
+  display: grid;
+  flex: 3;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  /* column-gap: 40px; */
+  gap: 15px;
+}
+
+.pro {
+  padding: 20px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 20px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.pro .des {
+  margin-top: 15px;
+}
+.pro i {
+  padding: 10px 10px;
+  border: 1px solid #cce7d0;
+  border-radius: 10px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+  /* margin: 5px 0; */
+  color: #ff2828;
+  font-size: 18px;
+}
+
+.pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.pro img {
+  width: 100%;
+  height: 75%;
+  border-radius: 20px;
+}
+
 .products {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -85,28 +244,6 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   justify-items: center;
-}
-
-.prod {
-  display: flex;
-  flex-direction: row;
-  width: 580px;
-  height: 210px;
-  background: #ffffff;
-  text-align: center;
-}
-
-.prod img {
-  width: 50%;
-}
-
-.detailsPlat {
-  width: 50%;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 4%;
 }
 
 .platsName {
@@ -157,10 +294,10 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 358px;
-  height: 349px;
+  width: auto;
+  height: auto;
   gap: 20px;
-  margin: 0% 10%;
+  margin: 50px 0%;
 }
 .btns {
   display: flex;
@@ -185,9 +322,56 @@ nav a:hover {
 
 .valider {
   width: 280px;
-  height: 60px;
+  height: 50px;
   color: #ffffff;
   border: none;
   background: #ff2828;
   border-radius: 30px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: solid 1px;
+  background: #ffffff;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  margin-top: 130px;
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #000000;
+  overflow: hidden;
+  border-radius: 0.25em;
+  margin-left: 37%;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #000000;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+.select:hover::after {
+  color: white;
 }
