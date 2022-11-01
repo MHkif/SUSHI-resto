@@ -1,7 +1,7 @@
 var totalg = 0;
 let qntA ;
 function add(img,title,price,qnt){
-qntA = qnt;
+ qnt;
 if(qnt>1){
   document.getElementById("test").innerHTML +=`<div class="prod">
   <div class="qnt">
@@ -14,7 +14,7 @@ if(qnt>1){
       <span class="price">${price} MAD</span>
       <div class="priceIcons">
       <a href="#test" onclick="counter('+', ${price})" <i class="fa-solid fa-circle-plus" style="color: #ff2828"></i> </a>
-      <span class="price">${qntA} </span>
+      <span class="price">${qnt} </span>
       <a href="#test" onclick="counter('-', ${price})"  <i class="fa-solid fa-circle-minus" style="color: #ff2828"></i> </a>
       </div>
     </div>
@@ -36,11 +36,10 @@ if(qnt>1){
   </div>
 </div>`;
 }
+
 totalg += price;
 document.getElementById("prixT").innerText = totalg;
 }
-
-
 
 
 

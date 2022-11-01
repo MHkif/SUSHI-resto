@@ -33,7 +33,7 @@
             <i class="fa fa-times" onclick="hide()"></i>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="apropos.html">A Propos</a></li>
+                <li><a href="about.html">A Propos</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -71,7 +71,7 @@
                           <span class="subtitle">Sushi Rolls</span>
                           <div class="price_section">
                             <span class="price">50 MAD</span>
-                            <a href="#test"  onclick="add('images/dragon roll.jpg','Dragon Roll',50)"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                            <a href="#test"  onclick="add('images/dragon roll.jpg','Dragon Roll',50,1)"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
                           </div>
                         </div>
                       
@@ -85,7 +85,7 @@
                           <span class="subtitle">Healthy Salads</span>
                           <div class="price_section">
                             <span class="price">75 MAD</span>
-                            <a href="#test"  onclick="add('images/salade.jpg','Salade Vegetable',75)"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                            <a href="#test"  onclick="add('images/salade.jpg','Salade Vegetable',75,1)"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
                           </div>
                         </div>
                       <div></div>
@@ -97,7 +97,7 @@
                           <span class="subtitle">Plat Sushi</span>
                           <div class="price_section">
                             <span class="price">175 MAD</span>
-                            <a href="#test"  onclick="add('images/plat1.jpg','Single Sushi',175)"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                            <a href="#test"  onclick="add('images/plat1.jpg','Single Sushi',175, 1)"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
                           </div>
                         </div>
 
@@ -157,71 +157,24 @@
 
   
   </body>
-  <footer>
-    <!-- info section -->
-    <div class="left_S">
-      <div class="ftlogo">
-        <a href="">
-          <img class="logo" src="images/sushi_image.png" alt="" />
-        </a>
-        <a href="">
-          <img class="logo_name" src="images/Fresh Sushi.png" alt="" />
-        </a>
+  <hr>
+  <section class="footer">
+  
+  
+    <div>
+      <h5 class="info_heading">Follow Us</h5>
+
+      <div class="icons">
+          <a href=""><i class="fa fa-facebook"></i></a>
+          <a href=""><i class="fa fa-twitter"></i></a>
+          <a href=""><i class="fa fa-linkedin"></i></a>
       </div>
-      
-    </div>
-
-    <section class="info_section">
-      <div class="infos">
-        <div class="address">
-          <a href="">
-            <!-- <img class="footer_icons" src="images/location.png" alt="" /> -->
-            <span class="text"> Address </span>
-          </a>
-        </div>
-        <div class="info_contact">
-          <a href="">
-            <!-- <img class="footer_icons" src="images/phone.png" alt="" /> -->
-            <span class="text"> +01 1234567890 </span>
-          </a>
-        </div>
-
-        <div class="email">
-          <a href="">
-            <!-- <img class="footer_icons" src="images/mail.png" alt="" /> -->
-            <span class="text"> demo@gmail.com </span>
-          </a>
-        </div>
+    <section class="container-fluid footer_section">
+        <p>
+          &copy; <span id="displayYear">2022</span> All Rights Reserved 
+        </p>
+      </section>
       </div>
-      <div class="info_social">
-       <div>
-        <h5 class="info_heading">Follow Us</h5>
-       </div>
-       <div class="social_box">
-        <a href="">
-          <img src="images/fb.png" alt="" />
-        </a>
-        <a href="">
-          <img src="images/twitter.png" alt="" />
-        </a>
-        <a href="">
-          <img src="images/linkedin.png" alt="" />
-        </a>
-        <a href="">
-          <img src="images/insta.png" alt="" />
-        </a>
-    </div>
-
-    </div>
-    </section>
-      
-      
-     
-    </section>
-
-   
-    
-    
-  </footer>
+</section>
 </html>
 <script src="./js/home.js"></script>

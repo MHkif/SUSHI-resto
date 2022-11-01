@@ -1,97 +1,3 @@
-footer {
-  /* margin-top: 2000px; */
-  display: flex;
-  flex-wrap: wrap;
-  height: 150px;
-  background: #ffffff;
-  width: 100%;
-  color: #2d2d2d;
-  /* gap: 20%; */
-}
-
-.info_section {
-  display: flex;
-  flex-direction: column;
-  gap: 18%;
-  width: 100%;
-  padding: 5% 0px;
-  background: #e64d38;
-}
-/* .row1 {
-    display: block;
-    justify-content: center;
-    align-items: center;
-text-align: center;
-    background-color: #ffffff;
-    width: 208px;
-height: 220px;
-background: #FFFFFF;
-border-radius: 0px 0px 250px 0px;
-  } */
-/*   
-.row1 .Sushi_img{
-    width: 140px;
-  }
-  .row1 .Fresh_img{
-    width: 100px;
-  }
- */
-
-.infos {
-  height: 20px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  color: #2d2d2d;
-  gap: 15%;
-}
-
-.ftlogo {
-  display: flex;
-  flex-direction: column;
-  background: #000000;
-  border-radius: 0px 0px 250px 0px;
-  padding: 8%;
-  height: 100%;
-  width: 100%;
-}
-
-.infos a {
-  text-decoration: none;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  align-items: center;
-  color: #2d2d2d;
-}
-.footer_icons {
-  width: 14px;
-  color: #2d2d2d;
-}
-
-/*
-.conatct_box {
-  display: flex;
-  gap: 15px;
-   justify-content: center; 
-   align-items: center; 
-}
-
-/* .newslettre{
-  display: flex;
-  padding-left: 20%;
-  justify-content: center;
-  align-items: center;
-
-} */
-
-/* .info_form{
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-} */
-
 .info_heading {
   display: flex;
   align-items: center;
@@ -102,7 +8,7 @@ border-radius: 0px 0px 250px 0px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  margin: 30% 0;
+  margin: 30px 0;
   position: relative;
 }
 
@@ -119,72 +25,54 @@ border-radius: 0px 0px 250px 0px;
   background: linear-gradient(180deg, #ff2828 0%, #e64d38 100%);
 }
 
-/* #input{
-  width: 500px;
- justify-content: left;
- 
-} */
+.info a {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  align-items: center;
+  color: #2d2d2d;
+}
 
-/* #btn_sub{
-width: 125px;
-height: 34px;
-background: linear-gradient(180deg, #FF2828 0%, #E64D38 99.99%, #E64D38 100%);
-border-radius: 20px;
-border-style: none;
-color: #FFFFFF;
-} */
-
-/* form label{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 30px;
-
-color: #5A5959;
-} */
-
-.info_social {
+.info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  width: 100%;
-}
-.social_box {
-  display: flex;
   gap: 20px;
-  width: 250px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
 }
 
-/* .rights{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 20%;
-height: 80px;
-background: #2D2D2D;
-align-items: center;
-justify-content: center;
-text-align: center;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #9C9B9B;
-gap: 20px;
-} */
 
-/* .line{
-  width: 200px;
-  margin-top: 5%;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: outset;
-  border-width: 1px;
-} */
+.footer_icons {
+  width: 14px;
+  color: #2d2d2d;
+}
+
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.footer p {
+  font-size: 11px;
+}
+.icons .fa {
+  color: black;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+hr {
+  margin: 10% 30% 0% 30%;
+  background: #424242;
+}
