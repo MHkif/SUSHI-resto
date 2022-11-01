@@ -1,27 +1,46 @@
 /*  Mobile  */
 @media (max-width: 700px) {
-  .seg1 {
-    height: 180px;
+  
+  
+  .nav-links ul li {
+    display: block;
+    padding-bottom: 12%;
   }
 
-  .header_class {
-    height: 60px;
-    justify-content: space-between;
-    align-items: center;
+  .nav-links ul li:first-child {
+    padding-top: 50px;
   }
 
-  .header_class img {
-    height: 50px;
+  .nav-links {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.44);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: center;
+    z-index: 2;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-top: 0;
+    transition: 1s;
   }
 
-  .menu {
-    color: #ffffff;
-    display: flex;
-    text-decoration: none;
+
+  nav img {
+    width: 100px;
   }
-  nav,
-  .right_side {
-    display: none;
+
+  nav .fa {
+    display: block;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  nav .fa-times {
+    text-align: left;
   }
 
   .Content {
@@ -54,26 +73,7 @@
     font-size: 39px;
     color: #ff2828;
   }
-  .bottom {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    gap: 80px;
-    padding: 30px 0px 12% 0px;
-  }
 
-  .IconCard {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    color: #2d2d2d;
-    width: 100%;
-  }
-  .IconCard i {
-    font-size: 50px;
-  }
 }
 
 /* Small Screens */
