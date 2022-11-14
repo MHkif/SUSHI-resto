@@ -1,10 +1,4 @@
 @media (max-width: 700px) {
-  * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-  }
-
   .text-box h1 {
     font-size: 40px;
   }
@@ -50,38 +44,19 @@
     width: 100px;
   }
 
-  .promo {
-    width: 300px;
-    height: 75px;
-    top: 200px;
-    background: rgba(45, 45, 45, 0.95);
-    border-radius: 30px;
-    align-items: center;
-    justify-content: center;
-    left: 40px;
+  .gridProd {
+    gap: 50px;
   }
-
-  .promo p {
-    width: auto;
-    height: 70px;
-    left: 10px;
-    top: 0px;
-    /* margin: 0% auto; */
-    justify-content: center;
-    align-items: center;
-    font-size: 8px;
-    text-justify: auto;
-  }
-
-  .Pro-container {
+  
+  /* .Pro-container {
     grid-template-columns: repeat(2, 1fr);
-  }
+  }  */
 
-  .pro img {
+  /* .pro img {
     width: 100%;
     height: 75%;
     border-radius: 20px;
-  }
+  } */
 
   .pro i {
     font-size: 14px;
@@ -128,73 +103,49 @@
     font-size: 10px;
   }
 
-  .price {
+  /* .price {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     color: #393939;
-  }
+  } */
 
   .total {
     gap: 18px;
-    margin: 20% 10%;
+    margin: 20px 0;
   }
   .btns {
     gap: 16px;
   }
 
   #tol {
-    font-size: 26px;
+    font-size: 20px;
   }
 
-  .top_seg {
+  /* .top_seg {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-  }
-
-  .valider {
-    color: #ffffff;
-    border: none;
-    background: #ff2828;
-    border-radius: 30px;
-  }
+  } */
 }
 
 @media (min-width: 506px) and (max-width: 560px) {
-  .gridProd {
+  /* .gridProd {
     flex-direction: column;
-  }
+  } */
   nav img {
     width: 140px;
   }
 
-  .carteSide {
-    width: 60%;
+  /* .carteSide {
     justify-content: center;
     margin: 10% auto 0%;
-  }
+  } */
 }
 
 @media (min-width: 701px) and (max-width: 900px) {
-  .promo {
-    width: 75vh;
-    height: 75px;
-    top: 45vh;
-    left: 25vh;
-  }
-
-  .promo p {
-    top: 10px;
-    font-size: 12px;
-  }
-
-  .Pro-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .detailsPlat {
     justify-content: space-between;
   }
@@ -242,27 +193,13 @@
 
   .total {
     gap: 18px;
-    margin: 20% 10%;
+    /* margin: 20% 10%; */
   }
   .btns {
     gap: 16px;
   }
 
-  #tol {
-    font-size: 26px;
-  }
-
-  .top_seg {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .valider {
-    color: #ffffff;
-    border: none;
-    background: #ff2828;
-    border-radius: 30px;
-  }
+  /* #tol {
+    font-size: 24px;
+  } */
 }

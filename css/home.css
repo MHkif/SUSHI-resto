@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  text-decoration: none;
+  list-style: none;
 }
 
 .seg1 {
@@ -34,7 +37,7 @@ body {
   color: #f6f6f6;
 }
 
-nav {
+/* nav {
   display: flex;
   padding: 1.5% 2%;
   justify-content: space-between;
@@ -71,7 +74,7 @@ nav a:hover {
   color: #ffffff;
   border-radius: 40px;
   padding: 10px 15px;
-}
+} */
 
 .chefs {
   display: flex;
@@ -195,3 +198,57 @@ nav a:hover {
 .circle.THREE {
   color: crimson;
 }
+
+/* ++++++ */
+.navbar {
+  z-index: 1;
+  position: absolute;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
+}
+
+nav img {
+  width: 140px;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 20px;
+}
+
+.navbar .nav-links ul li.active a {
+  color: red;
+  font-weight: 600;
+}
+
+.menu-humberger {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 30px;
+  border: 1px solid white;
+  padding: 0% 10px;
+  cursor: pointer;
+}
+.nav-links.mobile-menu {
+  margin-left: 0;
+}
+/* ++++++ */

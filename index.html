@@ -23,25 +23,26 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;600&family=Poppins:wght@500;600&display=swap"
       rel="stylesheet"
     />
-<!-- 
+    <!-- 
     <script src="/js/home.js"></script> -->
   </head>
   <body>
     <section class="main">
       <div class="seg1">
-        <nav>
+        <nav class="navbar">
           <a href=""><img src="images/logoo.png" alt="" /></a>
           <div class="nav-links" id="nav-links">
-            <i class="fa fa-times" onclick="hide()"></i>
+            <!-- <i class="fa fa-times" onclick="hide()"></i> -->
             <ul>
-              <li><a href="index.html">Accueil</a></li>
+              <li class="active"><a href="index.html">Accueil</a></li>
               <li><a href="carte.html">Menu</a></li>
               <li><a href="about.html">A Propos</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
-
-          <i class="fa fa-bars" onclick="show()"></i>
+          <div class="menu-humberger">  <i class="fa fa-bars"></i></div>
+         
+          <!-- <i class="fa fa-bars" onclick="show()"></i> -->
         </nav>
 
         <div class="description">
@@ -141,6 +142,13 @@
       </div>
     </section>
 
-    <script src="./js/home.js"></script>
+    <script>
+      const menuhumberger = document.querySelector(".menu-humberger")
+      const navLinks = document.querySelector(".nav-links")
+      menuhumberger.addEventListener('click' , ()=>{
+        navLinks.classList.toggle('mobile-menu');
+      })
+
+    </script>
   </body>
 </html>
