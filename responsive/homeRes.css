@@ -17,49 +17,10 @@
     font-size: 11px;
   }
 
-  /* .nav-links ul li {
-    display: block;
-    padding-bottom: 12%;
-  }
-
-  .nav-links ul li:first-child {
-    padding-top: 50px;
-  }
-
-  .nav-links {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.44);
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: center;
-    z-index: 2;
-    box-sizing: border-box;
-    border: 1px solid black;
-    border-top: 0;
-    transition: 1s;
-  } */
-  /* 
-  nav img {
-    width: 100px;
-  } */
-
-  /* nav .fa {
-    display: block;
-    color: rgb(255, 255, 255);
-    margin: 10px;
-    font-size: 26px;
-    cursor: pointer;
-  }
-
-  nav .fa-times {
-    text-align: left;
-  } */
-
   .description {
     margin: auto 0%;
     width: calc(100% - 40px);
+    left: 30px;
   }
 
   .description h2 {
@@ -79,11 +40,9 @@
     text-align: center;
   }
   /*  ++++++++++++++   */
-  .navbar {
-    padding: 0;
-  }
+ 
 
-  .navbar .logo{
+  .navbar .logo {
     position: absolute;
     top: 10px;
     left: 50px;
@@ -116,10 +75,8 @@
     margin: 20px 0;
     font-size: 1.2rem;
   }
-  
-  /* nav img {
-  width: 100px;
-} */
+
+
 
   /* ++++++++++++++ */
 }
@@ -127,7 +84,7 @@
 /* Small Screens */
 
 @media (min-width: 701px) and (max-width: 900px) {
-  nav {
+  /* nav {
     display: flex;
     padding: 1.5% 2%;
     justify-content: space-between;
@@ -162,7 +119,7 @@
     color: #ffffff;
     border-radius: 40px;
     padding: 10px 15px;
-  }
+  } */
 
   .chefs {
     display: flex;

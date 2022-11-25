@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <script
-    src="https://kit.fontawesome.com/58c375ca00.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/58c375ca00.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,27 +24,23 @@
 
   <body>
     <div class="seg1">
-      <nav>
-        <a href=""><img src="images/logoo.png" alt="" /></a>
+      <nav class="navbar">
+        <a href=""><img src="./images/Logoo.png" alt="" /></a>
         <div class="nav-links" id="nav-links">
-          <i class="fa fa-times" onclick="hide()"></i>
           <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="carte.html">Menu</a></li>
-            <li><a href="about.html">A Propos</a></li>
+            <li class="active"><a href="about.html">A Propos</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-
-        <i class="fa fa-bars" onclick="show()"></i>
+        <div class="menu-humberger"><i class="fa fa-bars"></i></div>
       </nav>
-
-     
     </div>
     <div class="Content">
       <img
         class="paraImg"
-        src="images/backg3.jpg"
+        src="./images/backg3.jpg"
         alt="if there is no image [ GHayarha ]"
       />
 
@@ -63,7 +59,7 @@
         </p>
       </div>
     </div>
- 
+
     <hr />
     <section class="footer">
       <div>
@@ -79,8 +75,12 @@
         </section>
       </div>
     </section>
-    <script src="./js/home.js"></script>
+    <script>
+      const menuhumberger = document.querySelector(".menu-humberger");
+      const navLinks = document.querySelector(".nav-links");
+      menuhumberger.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    </script>
   </body>
-
-
 </html>

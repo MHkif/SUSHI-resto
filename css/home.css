@@ -16,14 +16,12 @@
   height: 100vh;
 }
 
-body {
+/* body {
   font-family: Poppins;
-}
+} */
 
 .description {
   position: relative;
-  /* justify-self: center;
-  justify-content: center; */
   top: 30%;
   left: 60px;
   color: #fff;
@@ -36,45 +34,6 @@ body {
 .description p {
   color: #f6f6f6;
 }
-
-/* nav {
-  display: flex;
-  padding: 1.5% 2%;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.44);
-  height: 80px;
-}
-
-nav img {
-  width: 140px;
-}
-.nav-links {
-  flex: 1;
-  text-align: right;
-}
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 8px 30px;
-  position: relative;
-}
-.nav-links ul li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 600;
-}
-nav .fa {
-  display: none;
-}
-
-nav a:hover {
-  background-color: #777777;
-  color: #ffffff;
-  border-radius: 40px;
-  padding: 10px 15px;
-} */
 
 .chefs {
   display: flex;
@@ -94,8 +53,6 @@ nav a:hover {
   justify-content: center;
   width: 100%;
   height: auto;
-  /* left: 2px;
-  top: 200px; */
 }
 
 .plat1 {
@@ -203,12 +160,13 @@ nav a:hover {
 .navbar {
   z-index: 1;
   position: absolute;
-  padding: 10px 50px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.349);
 }
 
 .navbar a {
@@ -241,13 +199,14 @@ nav img {
 .menu-humberger {
   display: none;
   position: absolute;
-  top: 10px;
-  right: 30px;
-  font-size: 30px;
-  border: 1px solid white;
+  top: 15px;
+  right: 10px;
+  font-size: 25px;
   padding: 0% 10px;
   cursor: pointer;
+  color: white;
 }
+
 .nav-links.mobile-menu {
   margin-left: 0;
 }

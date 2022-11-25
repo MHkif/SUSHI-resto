@@ -25,19 +25,17 @@
   </head>
   <body>
     <div class="seg1">
-      <nav>
-        <a href=""><img src="images/logoo.png" alt="" /></a>
+      <nav class="navbar">
+        <a href=""><img src="./images/Logoo.png" alt="" /></a>
         <div class="nav-links" id="nav-links">
-          <i class="fa fa-times" onclick="hide()"></i>
           <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="carte.html">Menu</a></li>
             <li><a href="about.html">A Propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-
-        <i class="fa fa-bars" onclick="show()"></i>
+        <div class="menu-humberger"><i class="fa fa-bars"></i></div>
       </nav>
     </div>
     <div class="Container">
@@ -125,7 +123,13 @@
         </section>
       </div>
     </section>
-   
-    <script src="./js/home.js"></script>
+
+    <script>
+      const menuhumberger = document.querySelector(".menu-humberger");
+      const navLinks = document.querySelector(".nav-links");
+      menuhumberger.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    </script>
   </body>
 </html>

@@ -26,152 +26,152 @@
 
   <body>
    
-    <div class="seg1">
-      <nav>
-        <a href=""><img src="images/logoo.png" alt=""></a>
-        <div class="nav-links" id="nav-links">
-            <i class="fa fa-times" onclick="hide()"></i>
+    <div class="main">
+      <div class="seg1">
+     
+        <nav class="navbar">
+          <a href=""><img src="./images/logoo.png" alt="" /></a>
+          <div class="nav-links" id="nav-links">
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">A Propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+              <li ><a href="index.html">Accueil</a></li>
+              <li class="active"><a href="carte.html">Menu</a></li>
+              <li><a href="about.html">A Propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
-
-        <i class="fa fa-bars" onclick="show()"></i>
-    </nav>
-      <!-- <div class="promo">
-        <p id="txt_Promo">
-          Promo : 1 Coca-Cola ou 1 paire de Boules Coco offert dès 25€ ou 1
-          California saumon Cheese offert dès 30€ de commande sur Internet,
-          profitez en !
-        </p>
+          </div>
+          <div class="menu-humberger">  <i class="fa fa-bars"></i></div>
+         
+        </nav>
+        <div class="select">
+          <select name="" id="select1" onclick="test()">
+              <option value="" >Toutes les categories</option>
+              <option value="">Salades</option>
+              <option value="">Roll</option>
+              <option value="">Plats</option>
+              <option value="">Juices</option>
+            </select>
       </div>
-    </div> -->
-
-    <div class="select">
-      <select name="" id="select1" onclick="test()">
-          <option value="" >Toutes les categories</option>
-          <option value="">Salades</option>
-          <option value="">Roll</option>
-          <option value="">Plats</option>
-          <option value="">Juices</option>
-        </select>
-  </div>
-
-            <div class="gridProd">
-
-
-                    <div class="Pro-container">
-                      <div class="pro roll">
-                        <img src="images/dragon roll.jpg" alt="">
-                        
-                        <div class="des">
-                          <h3 class="platsName">Dragon Roll</h5>
-                          <span class="subtitle">Sushi Rolls</span>
-                          <div class="price_section">
-                            <span class="price">50 </span>
-                            <a   onclick="add('images/dragon roll.jpg','Dragon Roll',50,'prd1')"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
-                          </div>
-                        </div>
-                      
-                
-                      <div></div>
-                      </div>
-                      <div class="pro salade">
-                        <img src="images/salade.jpg" alt="">
-                        <div class="des">
-                          <h3 class="platsName">Salade Vegetable</h5>
-                          <span class="subtitle">Healthy Salads</span>
-                          <div class="price_section">
-                            <span class="price">75 </span>
-                            <a   onclick="add('images/salade.jpg','Salade Vegetable',75,'prd2')"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
-                          </div>
-                        </div>
-                      <div></div>
-                      </div>
-                      <div class="pro plat">
-                        <img src="images/plat1.jpg" alt="">
-                        <div class="des">
-                          <h3 class="platsName">Single Sushi</h5>
-                          <span class="subtitle">Plat Sushi</span>
-                          <div class="price_section">
-                            <span class="price">175 </span>
-                            <a   onclick="add('images/plat1.jpg','Single Sushi',175,'prd3')"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
-                          </div>
-                        </div>
-
-                      <div></div>
-                      </div>
-                      <div class="pro plat">
-                        <img src="images/plat2.jpg" alt="">
-                        <div class="des">
-                          <h3 class="platsName">Double Sushi</h5>
-                          <span class="subtitle">Plat Sushi</span>
-                          <div class="price_section">
-                            <span class="price">245 </span>
-                            <a  onclick="add('images/plat2.jpg','Double Sushi',245,'prd4')" ><i class="fa-sharp fa-solid fa-bag-shopping" id="add" ></i></a>
-                          </div>
-                        </div>
-                        
-                      <div></div>
-                      </div>
-                      <div class="pro juice">
-                        <img src="images/juices.jpg" alt="">
-                        <div class="des">
-                          <h3 class="platsName">Juice Panaché</h5>
-                          <span class="subtitle">juices</span>
-                          <div class="price_section">
-                            <span class="price">45 </span>
-                            <a  onclick="add('images/juices.jpg','Juice Panaché',45,'prd5')" ><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
-                          </div>
-                        </div>
-                        
-                      <div></div>
-                      </div>
-                        
-                    </div>
-                    <div class="carteSide">
-                      <h3 class="carteTitle">My Cart</h3>
-                    <div class="carteProds" id="test">
+    
+                <div class="gridProd">
+    
+    
+                        <div class="Pro-container">
+                          <div class="pro roll">
+                            <img src="./images/dragon roll.jpg" alt="">
+                            
+                            <div class="des">
+                              <h3 class="platsName">Dragon Roll</h5>
+                              <span class="subtitle">Sushi Rolls</span>
+                              <div class="price_section">
+                                <span class="price">50 </span>
+                                <a   onclick="add('images/dragon roll.jpg','Dragon Roll',50,'prd1')"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                              </div>
+                            </div>
+                          
                     
-                    </div>
-                    <div class="total">
-                      <div class="top_seg">
-                        <span id="tol">Total  : </span>
-                        <div>
-                          <span class="price"  id="prixT" style="color: red;">0.00 </span>
-                          <!-- <span class="price" ></span> -->
+                          <div></div>
+                          </div>
+                          <div class="pro salade">
+                            <img src="./images/salade.jpg" alt="">
+                            <div class="des">
+                              <h3 class="platsName">Salade Vegetable</h5>
+                              <span class="subtitle">Healthy Salads</span>
+                              <div class="price_section">
+                                <span class="price">75 </span>
+                                <a   onclick="add('images/salade.jpg','Salade Vegetable',75,'prd2')"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                              </div>
+                            </div>
+                          <div></div>
+                          </div>
+                          <div class="pro plat">
+                            <img src="./images/plat1.jpg" alt="">
+                            <div class="des">
+                              <h3 class="platsName">Single Sushi</h5>
+                              <span class="subtitle">Plat Sushi</span>
+                              <div class="price_section">
+                                <span class="price">175 </span>
+                                <a   onclick="add('images/plat1.jpg','Single Sushi',175,'prd3')"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                              </div>
+                            </div>
+    
+                          <div></div>
+                          </div>
+                          <div class="pro plat">
+                            <img src="./images/plat2.jpg" alt="">
+                            <div class="des">
+                              <h3 class="platsName">Double Sushi</h5>
+                              <span class="subtitle">Plat Sushi</span>
+                              <div class="price_section">
+                                <span class="price">245 </span>
+                                <a  onclick="add('images/plat2.jpg','Double Sushi',245,'prd4')" ><i class="fa-sharp fa-solid fa-bag-shopping" id="add" ></i></a>
+                              </div>
+                            </div>
+                            
+                          <div></div>
+                          </div>
+                          <div class="pro juice">
+                            <img src="./images/juices.jpg" alt="">
+                            <div class="des">
+                              <h3 class="platsName">Juice Panaché</h5>
+                              <span class="subtitle">juices</span>
+                              <div class="price_section">
+                                <span class="price">45 </span>
+                                <a  onclick="add('images/juices.jpg','Juice Panaché',45,'prd5')" ><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                              </div>
+                            </div>
+                            
+                          <div></div>
+                          </div>
+                            
                         </div>
-                      </div>
-                      <div class="btns">
-                        <button class="valider" id="valider">Confimer</button>
-                      </div>
-                    </div>
-                    </div>
-                                             
-        </div>
-        <hr>
-  <section class="footer">
-  
-  
-    <div>
-      <h5 class="info_heading">Follow Us</h5>
+                        <div class="carteSide">
+                          <h3 class="carteTitle">My Cart</h3>
+                        <div class="carteProds" id="test">
+                        
+                        </div>
+                        <div class="total">
+                          <div class="top_seg">
+                            <span id="tol">Total  : </span>
+                            <div>
+                              <span class="price"  id="prixT" style="color: red;">0.00 </span>
+                              <!-- <span class="price" ></span> -->
+                            </div>
+                          </div>
+                          <div class="btns">
+                            <button class="valider" id="valider">Confimer</button>
+                          </div>
+                        </div>
+                        </div>
+                                                 
+            </div>
+            <hr>
+      <section class="footer">
+      
+      
+        <div>
+          <h5 class="info_heading">Follow Us</h5>
+    
+          <div class="icons">
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+          </div>
+        <section class="container-fluid footer_section">
+            <p>
+              &copy; <span id="displayYear">2022</span> All Rights Reserved 
+            </p>
+          </section>
+          </div>
+    </section>
+    </div>
+<script>
+  const menuhumberger = document.querySelector(".menu-humberger")
+  const navLinks = document.querySelector(".nav-links")
+  menuhumberger.addEventListener('click' , ()=>{
+    navLinks.classList.toggle('mobile-menu');
+  })
 
-      <div class="icons">
-          <a href=""><i class="fa fa-facebook"></i></a>
-          <a href=""><i class="fa fa-twitter"></i></a>
-          <a href=""><i class="fa fa-linkedin"></i></a>
-      </div>
-    <section class="container-fluid footer_section">
-        <p>
-          &copy; <span id="displayYear">2022</span> All Rights Reserved 
-        </p>
-      </section>
-      </div>
-</section>
-        <script src="./js/home.js"></script>
+</script>
   </body>
   
 </html>
-<!-- <script src="./js/home.js"></script> -->

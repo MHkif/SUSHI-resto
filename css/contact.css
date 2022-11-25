@@ -1,12 +1,14 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  text-decoration: none;
+  list-style: none;
 }
 
 .seg1 {
-  background-image: url("/images/contact_sushi.jpg");
+  background-image: url("../images/contact_sushi.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -14,45 +16,57 @@
   height: 40vh;
 }
 
-nav {
+/* ++++++ */
+.navbar {
+  z-index: 1;
+  position: absolute;
+  padding: 10px 20px;
   display: flex;
-  padding: 1.5% 2%;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.44);
-  height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.349);
 }
 
-nav img {
-  width: 140px;
+.navbar a {
+  color: white;
 }
-.nav-links {
-  flex: 1;
-  text-align: right;
+
+.navbar .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
 }
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 8px 30px;
-  position: relative;
+
+.navbar .nav-links ul {
+  display: flex;
 }
-.nav-links ul li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 13px;
+
+.navbar .nav-links ul li {
+  margin: 0 20px;
+}
+
+.navbar .nav-links ul li.active a {
+  color: red;
   font-weight: 600;
 }
-nav .fa {
+
+.menu-humberger {
   display: none;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 25px;
+  padding: 0% 10px;
+  cursor: pointer;
+  color: white;
 }
 
-nav a:hover {
-  background-color: #777777;
-  color: #ffffff;
-  border-radius: 40px;
-  padding: 10px 15px;
+.nav-links.mobile-menu {
+  margin-left: 0;
 }
-
+/* ++++++ */
 .Container {
   display: flex;
   flex-wrap: wrap;

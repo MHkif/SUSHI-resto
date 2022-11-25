@@ -1,58 +1,71 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  text-decoration: none;
+  list-style: none;
 }
 
 .seg1 {
-  background-image: url("/images/aboutimage.jpg");
+  background-image: url("../images/aboutimage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 40vh;
 }
-
-nav {
+/* ++++++ */
+.navbar {
+  z-index: 1;
+  position: absolute;
+  padding: 10px 20px;
   display: flex;
-  padding: 1.5% 2%;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.44);
-  height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.349);
 }
 
-nav img {
-  width: 140px;
+.navbar a {
+  color: white;
 }
-.nav-links {
-  flex: 1;
-  text-align: right;
+
+.navbar .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
 }
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 8px 30px;
-  position: relative;
+
+.navbar .nav-links ul {
+  display: flex;
 }
-.nav-links ul li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 13px;
+
+.navbar .nav-links ul li {
+  margin: 0 20px;
+}
+
+.navbar .nav-links ul li.active a {
+  color: red;
   font-weight: 600;
 }
-nav .fa {
+
+.menu-humberger {
   display: none;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 25px;
+  padding: 0% 10px;
+  cursor: pointer;
+  color: white;
 }
 
-nav a:hover {
-  background-color: #777777;
-  color: #ffffff;
-  border-radius: 40px;
-  padding: 10px 15px;
+.nav-links.mobile-menu {
+  margin-left: 0;
 }
-
+/* ++++++ */
 
 .Content {
   display: flex;
@@ -83,37 +96,4 @@ nav a:hover {
   font-weight: 500;
   font-size: 39px;
   color: #ff2828;
-}
-
-.bottom {
-  display: flex;
-  background-color: #ffffff;
-  padding: 10px 10px 8% 10px;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: auto;
-}
-
-.IconCard {
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-  gap: 60px;
-  padding: 30px 60px;
-  height: auto;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  align-items: center;
-  text-align: center;
-  color: #2d2d2d;
-}
-.IconCard i {
-  font-size: 60px;
 }
