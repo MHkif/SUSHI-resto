@@ -20,7 +20,6 @@
 /* ++++++ */
 .navbar {
   z-index: 1;
-  /* position: absolute; */
   background: rgba(0, 0, 0, 0.349);
   padding: 10px 20px;
   display: flex;
@@ -74,8 +73,8 @@ nav img {
 /* ++++++ */
 .gridProd {
   padding: 0px 20px;
-  margin-top: 150px;
-  width: 100vw;
+  margin-top: 50px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -86,7 +85,6 @@ nav img {
   flex: 3;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   justify-content: space-around;
-  /* column-gap: 40px; */
   gap: 15px;
 }
 
@@ -121,6 +119,7 @@ nav img {
   width: 100%;
   overflow-y: scroll;
   height: 100%;
+  padding: 0% 10px;
 }
 
 .prod {
@@ -308,6 +307,11 @@ nav img {
   align-items: center;
 }
 
+.main_select {
+  display: flex;
+  justify-content: center;
+}
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -317,7 +321,7 @@ select {
   box-shadow: none;
   border: solid 2px;
   background: #ffffff;
-  background-image: none;
+
   flex: 1;
   padding: 0 0.5em;
   color: rgb(0, 0, 0);
@@ -331,7 +335,7 @@ select::-ms-expand {
 }
 
 .select {
-  margin-top: 40vh;
+  margin-top: 40px;
   position: relative;
   display: flex;
   width: 20em;
@@ -340,7 +344,6 @@ select::-ms-expand {
   background: #000000;
   overflow: hidden;
   border-radius: 0.25em;
-  margin-left: 4%;
   color: #ffffff;
 }
 

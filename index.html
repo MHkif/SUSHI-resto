@@ -23,14 +23,12 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;600&family=Poppins:wght@500;600&display=swap"
       rel="stylesheet"
     />
- 
-
   </head>
   <body>
     <section class="main">
       <div class="seg1">
         <nav class="navbar">
-          <a href=""><img src="images/logoo.png" alt="" /></a>
+          <a href=""><img src="./images/logoo.png" alt="" /></a>
           <div class="nav-links" id="nav-links">
             <ul>
               <li class="active"><a href="index.html">Accueil</a></li>
@@ -39,8 +37,7 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
-          <div class="menu-humberger">  <i class="fa fa-bars"></i></div>
-         
+          <div class="menu-humberger"><i class="fa fa-bars"></i></div>
         </nav>
 
         <div class="description">
@@ -139,14 +136,13 @@
         </section>
       </div>
     </section>
-
+    <script src="js/home.js"></script>
     <script>
-      const menuhumberger = document.querySelector(".menu-humberger")
-      const navLinks = document.querySelector(".nav-links")
-      menuhumberger.addEventListener('click' , ()=>{
-        navLinks.classList.toggle('mobile-menu');
-      })
-
+      const menuhumberger = document.querySelector(".menu-humberger");
+      const navLinks = document.querySelector(".nav-links");
+      menuhumberger.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
     </script>
   </body>
 </html>

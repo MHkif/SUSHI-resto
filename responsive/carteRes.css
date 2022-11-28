@@ -11,7 +11,7 @@
   }
 
   /* ++++++ */
-  
+
   .navbar .logo {
     position: absolute;
     top: 10px;
@@ -35,7 +35,6 @@
     align-items: center;
     margin-left: -100%;
     transition: all 0.5s ease;
-    
   }
 
   .nav-links ul {
@@ -48,13 +47,11 @@
     margin: 20px 0;
     font-size: 1.2rem;
   }
-  
 
   .gridProd {
     gap: 50px;
   }
-  
- 
+
   .pro i {
     font-size: 14px;
     padding: 8px 8px;
@@ -128,20 +125,6 @@
   } */
 }
 
-@media (min-width: 506px) and (max-width: 560px) {
-  /* .gridProd {
-    flex-direction: column;
-  } */
-  /* nav img {
-    width: 140px;
-  } */
-
-  /* .carteSide {
-    justify-content: center;
-    margin: 10% auto 0%;
-  } */
-}
-
 @media (min-width: 701px) and (max-width: 900px) {
   .detailsPlat {
     justify-content: space-between;
@@ -173,7 +156,7 @@
   }
 
   .prod {
-    height: 90px;
+    height: 100px;
   }
 
   .platsName {
