@@ -9,7 +9,7 @@
 
 .seg1 {
   position: relative;
-  background-image: url("/images/back1.jpg");
+  background-image: url("../images/back1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
