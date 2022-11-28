@@ -1,4 +1,7 @@
 @media (max-width: 700px) {
+  .seg1 {
+    height: 30vh;
+  }
   .text-box h1 {
     font-size: 40px;
   }
@@ -25,16 +28,37 @@
     top: 0;
     left: 0;
     z-index: 1;
-    position: absolute;
+    position: fixed;
     background-color: #2d2d2da6;
     backdrop-filter: blur(8px);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: -100%;
     transition: all 0.5s ease;
+  }
+  .titleBar {
+    display: block;
+    position: absolute;
+    width: 126px;
+    height: 40px;
+    left: calc(50% - 63px);
+    top: 50%;
+    text-align: center;
+    background: rgba(158, 158, 158, 0.6);
+    border-radius: 8px;
+    color: white;
+  }
+  .hr {
+    position: absolute;
+    height: 2.5px;
+    left: calc(50% - 75px);
+    top: 51%;
+    width: 60%;
+    background: #ff2828;
+    border-radius: 2px;
   }
 
   .nav-links ul {
@@ -97,14 +121,6 @@
     font-size: 10px;
   }
 
-  /* .price {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    color: #393939;
-  } */
-
   .total {
     gap: 18px;
     margin: 20px 0;
@@ -116,13 +132,6 @@
   #tol {
     font-size: 20px;
   }
-
-  /* .top_seg {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  } */
 }
 
 @media (min-width: 701px) and (max-width: 900px) {

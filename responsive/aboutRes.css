@@ -39,7 +39,27 @@
     font-size: 1.2rem;
   }
 
-
+  .titleBar {
+    display: block;
+    position: absolute;
+    width: 126px;
+    height: 40px;
+    left: calc(50% - 63px);
+    top: 50%;
+    text-align: center;
+    background: rgba(158, 158, 158, 0.6);
+    border-radius: 8px;
+    color: white;
+  }
+  .hr {
+    position: absolute;
+    height: 2.5px;
+    left: calc(50% - 75px);
+    top: 51%;
+    width: 60%;
+    background: #ff2828 ;
+    border-radius: 2px;
+  }
 
   /* ++++++++++++++ */
 

@@ -27,6 +27,7 @@
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+  position: fixed;
 }
 
 .navbar a {
@@ -59,7 +60,7 @@ nav img {
 .menu-humberger {
   display: none;
   position: absolute;
-  top: 15px;
+  top: auto;
   right: 10px;
   font-size: 25px;
   padding: 0% 10px;
@@ -71,6 +72,10 @@ nav img {
 }
 
 /* ++++++ */
+.titleBar {
+  display: none;
+}
+
 .gridProd {
   padding: 0px 20px;
   margin-top: 50px;
