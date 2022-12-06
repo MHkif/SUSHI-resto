@@ -8,7 +8,7 @@
 }
 
 .seg1 {
-  background-image: url("/images/sushies.jpg");
+  background-image: url("../images/sushies.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
